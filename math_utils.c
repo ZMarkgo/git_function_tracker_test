@@ -8,6 +8,9 @@ long calculate_gcd(long a, long b) {
     if (a < 0) a = -a;
     if (b < 0) b = -b;
     
+    // 添加调试输出
+    printf("计算GCD: a=%ld, b=%ld\n", a, b);
+    
     if (b == 0) {
         return a;
     }
