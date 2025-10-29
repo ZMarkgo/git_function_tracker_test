@@ -12,15 +12,12 @@ long compute_gcd(long a, long b) {
         return 1; // 约定：gcd(0,0) = 1
     }
     
-    // 性能优化：确保a >= b
-    if (a < b) {
-        long temp = a;
-        a = b;
-        b = temp;
+    // 算法优化：使用迭代而非递归，避免栈溢出
+    while (b != 0) {
+        long temp = b;
+        b = a % b;
+        a = temp;
     }
     
-    if (b == 0) {
-        return a;
-    }
-    return compute_gcd(b, a % b);
+    return a;
 }
