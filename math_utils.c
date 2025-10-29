@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "math_utils.h"
-#include "gcd_utils.h"
+#include "greatest_common_divisor.h"
 
 // 计算两个数的最小公倍数
 int calculate_lcm(int a, int b) {

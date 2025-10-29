@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "gcd_utils.h"
+#include "greatest_common_divisor.h"
 
 // 目标追溯函数：计算两个数的最大公约数
 long compute_gcd(long a, long b) {

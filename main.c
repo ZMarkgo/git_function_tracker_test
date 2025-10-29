@@ -2,7 +2,7 @@
 #include "math_utils.h"
 #include "string_utils.h"
 #include "array_utils.h"
-#include "gcd_utils.h"
+#include "greatest_common_divisor.h"
 
 int main() {
     printf("测试数学工具函数\n");
