@@ -15,10 +15,11 @@ void bubble_sort(int arr[], int n) {
     }
 }
 
-// 查找数组中的最大值
-int find_max(int arr[], int n) {
+// 查找数组中的最大值（增强版）
+int find_max(int arr[], int size) {
+    if (arr == NULL || size <= 0) return 0; // 添加输入验证
     int max = arr[0];
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < size; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
