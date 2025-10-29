@@ -7,18 +7,16 @@ long gcd_calculator(long a, long b) {
     if (a < 0) a = -a;
     if (b < 0) b = -b;
     
-    // 调试信息输出
-    printf("计算GCD: 输入参数 a=%ld, b=%ld\n", a, b);
-    
     // 零值错误处理：数学上gcd(0,0)未定义，这里约定返回1
     if (a == 0 && b == 0) {
         return 1; // 约定返回1
     }
     
-    // 特殊情况快速返回
+    // 特殊情况快速返回（最终优化版）
     if (a == 0) return b;
     if (b == 0) return a;
     if (a == b) return a;
+    if (a == 1 || b == 1) return 1; // 新增：任何数与1的GCD都是1
     
     // 性能优化：确保a >= b，减少迭代次数
     if (a < b) {
