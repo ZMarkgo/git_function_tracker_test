@@ -4,6 +4,10 @@
 
 // 目标追溯函数：计算两个数的最大公约数
 int calculate_gcd(int a, int b) {
+    // 添加输入验证
+    if (a < 0) a = -a;
+    if (b < 0) b = -b;
+    
     if (b == 0) {
         return a;
     }
