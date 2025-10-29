@@ -24,7 +24,7 @@ long gcd_calculator(long a, long b) {
         b = temp;
     }
     
-    // 二进制GCD算法优化（Stein算法）
+    // 二进制GCD算法优化（Stein算法）- 增强版
     int shift = 0;
     
     // 移除公共因子2
@@ -39,23 +39,24 @@ long gcd_calculator(long a, long b) {
         a >>= 1;
     }
     
-    // 主循环
+    // 主循环 - 优化版本
     do {
         // 移除b中的因子2
         while ((b & 1) == 0) {
             b >>= 1;
         }
         
-        // 确保a <= b
+        // 确保a <= b，使用异或交换避免临时变量
         if (a > b) {
-            long temp = a;
-            a = b;
-            b = temp;
+            a ^= b;
+            b ^= a;
+            a ^= b;
         }
         
         b = b - a;
     } while (b != 0);
     
-    // 恢复公共因子2
-    return a << shift;
+    // 恢复公共因子2并确保结果为正
+    long result = a << shift;
+    return result > 0 ? result : -result;
 }
