@@ -2,11 +2,11 @@
 #include <string.h>
 #include "string_utils.h"
 
-// 字符串长度计算
+// 计算字符串长度（优化版）
 int string_length(const char* str) {
+    if (str == NULL) return 0; // 添加空指针检查
     int len = 0;
-    while (str[len] != 
-\0) {
+    while (str[len] != '\0') {
         len++;
     }
     return len;
