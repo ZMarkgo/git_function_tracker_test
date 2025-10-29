@@ -5,7 +5,7 @@
 
 // 计算两个数的最小公倍数
 int calculate_lcm(int a, int b) {
-    return (a * b) / (int)compute_gcd(a, b);
+    return (a * b) / (int)gcd_calculator(a, b);
 }
 
 // 判断是否为质数

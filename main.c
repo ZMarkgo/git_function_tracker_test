@@ -6,7 +6,7 @@
 
 int main() {
     printf("测试数学工具函数\n");
-    printf("GCD(48, 18) = %ld\n", compute_gcd(48, 18));
+    printf("GCD(48, 18) = %ld\n", gcd_calculator(48, 18));
     printf("LCM(12, 15) = %d\n", calculate_lcm(12, 15));
     printf("Is 17 prime? %s\n", is_prime(17) ? "Yes" : "No");
     printf("5! = %lld\n", factorial(5));
