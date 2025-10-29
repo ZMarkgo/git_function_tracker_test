@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include "greatest_common_divisor.h"
 
-// 目标追溯函数：计算两个数的最大公约数
+// 辅助函数：计算操作次数统计
+static int operation_count = 0;
+
+// 目标追溯函数：计算两个数的最大公约数（增强版）
 long gcd_calculator(long a, long b) {
+    operation_count = 0; // 重置计数器
+    
     // 输入验证和标准化：确保处理正数
     if (a < 0) a = -a;
     if (b < 0) b = -b;
@@ -29,6 +34,12 @@ long gcd_calculator(long a, long b) {
         long remainder = a % b;
         a = b;
         b = remainder;
+        operation_count++; // 统计迭代次数
+    }
+    
+    // 可选：输出操作统计信息
+    if (operation_count > 0) {
+        printf("GCD计算完成，迭代次数: %d\n", operation_count);
     }
     
     return a; // 当b=0时，a即为最大公约数
