@@ -2,7 +2,7 @@
 #include "math_utils.h"
 #include "string_utils.h"
 #include "array_utils.h"
-#include "advanced_math.h"
+#include "mathematical_algorithms.h"
 
 int main() {
     printf("测试数学工具函数\n");
