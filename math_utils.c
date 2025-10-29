@@ -3,7 +3,7 @@
 #include "math_utils.h"
 
 // 目标追溯函数：计算两个数的最大公约数
-long calculate_gcd(long a, long b) {
+long compute_gcd(long a, long b) {
     // 添加输入验证
     if (a < 0) a = -a;
     if (b < 0) b = -b;
@@ -14,12 +14,12 @@ long calculate_gcd(long a, long b) {
     if (b == 0) {
         return a;
     }
-    return calculate_gcd(b, a % b);
+    return compute_gcd(b, a % b);
 }
 
 // 计算两个数的最小公倍数
 int calculate_lcm(int a, int b) {
-    return (a * b) / (int)calculate_gcd(a, b);
+    return (a * b) / (int)compute_gcd(a, b);
 }
 
 // 判断是否为质数
