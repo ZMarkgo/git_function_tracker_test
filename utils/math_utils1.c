@@ -8,11 +8,7 @@ int calculate_lcm(int a, int b) {
     return (a * b) / (int)gcd_calculator(a, b);
 }
 
-long calculate(int a, int c){
-    long sum = a + c;
-    printf("sum=%ld\n", sum);
-    return sum;
-}
+
 
 // 判断是否为质数
 int is_prime(int n) {

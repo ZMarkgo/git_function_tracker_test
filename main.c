@@ -21,6 +21,12 @@ int main() {
     printf("Max value: %d\n", find_max(arr, n));
     printf("Min value: %d\n", find_min(arr, n));
     printf("Average: %.2f\n", calculate_average(arr, n));
+
+    long calculate(int a, int c){
+    long sum = a + c;
+    printf("sum=%ld\n", sum);
+    return sum;
+}
     
     return 0;
 }
