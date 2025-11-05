@@ -8,8 +8,8 @@ int calculate_lcm(int a, int b) {
     return (a * b) / (int)gcd_calculator(a, b);
 }
 
-int calculate(int a,int b){
-    return a+b;
+long calculate(int a,int b){
+    return (long)a+b;
 }
 
 // 判断是否为质数
