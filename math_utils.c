@@ -9,7 +9,7 @@ int calculate_lcm(int a, int b) {
 }
 
 long calculate(int a,int b){
-    return (long)a+b;
+    return (long)a-b;
 }
 
 // 判断是否为质数
