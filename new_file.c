@@ -3,7 +3,7 @@
 // 判断是否为质数
 int is_prime(int n) //test
 { 
-+    // test command
++    // test
     if (n <= 1) return 0;
 #ifdef STRICT_CHECK
     printf("Checking primality for: %d\n", n);
