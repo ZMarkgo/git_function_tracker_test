@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 判断是否为质数
-static int is_prime(int n) //test
+int is_prime(int n) //test
 { 
 +    // test command
     if (n <= 1) return 0;
