@@ -5,7 +5,7 @@ int is_prime(int n) //test
 { 
 +    // test command
     if (n <= 1) return 0;
-#ifdef DEBUG
+#ifdef STRICT_CHECK
     printf("Checking primality for: %d\n", n);
 #endif
     if (n <= 3) 
