@@ -8,7 +8,7 @@ int calculate_lcm(int a, int b) {
     return (a * b) / (int)gcd_calculator(a, b);
 }
 
-static int gcd(int a, int b) {
+ int gcd(int a, int b) {
     while (b != 0) {
         int temp = b;
         b = a % b;
