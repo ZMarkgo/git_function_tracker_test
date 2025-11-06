@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-// 判断是否为质数
-int is_prime(int n) //test command
-{ 
-+    // test 
+int _is_prime(int n){
+// test 
     if (n <= 1) return 0;
 #ifdef STRICT_CHECK
     printf("Checking primality for: %d\n", n);
@@ -18,4 +16,10 @@ int is_prime(int n) //test command
         }
     }
     return 1;
+}
+
+// 判断是否为质数
+int is_prime(int n) //test command
+{ 
+    return _is_prime(n);
 }
