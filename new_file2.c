@@ -1,7 +1,6 @@
 #include <stdio.h>
-
-//稍微复杂点的函数
-int complex_function(int x) {
+int _complex_function(int x){
+    // test
     if (x < 0) {
         return -1;
     } else if (x == 0) {
@@ -9,4 +8,8 @@ int complex_function(int x) {
     } else {
         return x * x + 2 * x + 1;
     }
+}
+//稍微复杂点的函数
+int complex_function(int x) {
+    return _complex_function(x);
 }
