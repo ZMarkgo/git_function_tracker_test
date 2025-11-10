@@ -8,3 +8,7 @@ void process_data(int n) {
     printf("Sum = %d\n", sum);
 }
 
+int add(int x, int y) {
+    return x + y;
+}
+
