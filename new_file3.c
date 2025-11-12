@@ -12,3 +12,9 @@ int add(int x, int y) {
     return x + y;
 }
 
+
+int is_prime(int n) 
+{ 
+    return _is_prime(n);
+}
+
