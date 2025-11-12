@@ -9,6 +9,7 @@ void process_data(int n) {
 }
 
 int add(int x, int y) {
+    // simple addition
     return x + y;
 }
 
