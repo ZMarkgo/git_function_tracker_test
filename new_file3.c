@@ -13,7 +13,7 @@ int add(int x, int y) {
 }
 
 
-int is_prime(int n) 
+int is_prime(int n) //tese
 { 
     return _is_prime(n);
 }
