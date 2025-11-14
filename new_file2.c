@@ -19,8 +19,4 @@ int complex_function(int x) {
 void advanced_feature() {
     printf("Advanced feature enabled!\n");
 }
-#else
-void advanced_feature() {
-    printf("Advanced feature disabled.\n");
-}
 #endif
