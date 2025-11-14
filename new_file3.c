@@ -18,3 +18,7 @@ int is_prime(int n)
     return _is_prime(n);
 }
 
+int new_function(int x){
+    return x*x;
+}
+
