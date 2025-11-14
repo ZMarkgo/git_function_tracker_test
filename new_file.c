@@ -24,8 +24,19 @@ int is_prime(int n) //test command
     return _is_prime(n);
 }
 
+//函数体和注释同时发生变化
 int calculate(int x, int y) {
-    int sum = x + y;
+    // 计算两个数的乘积加上它们的和
     int product = x * y;
-    return sum + product;
+    int sum = x + y;
+    int condition = (x > y) ? 1 : 0;
+    if (condition)
+    {
+        return product + sum;
+    }
+    else
+    {
+        return product - sum;       
+    }
+    
 }
