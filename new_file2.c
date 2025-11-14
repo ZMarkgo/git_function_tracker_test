@@ -13,3 +13,14 @@ int _complex_function(int x){
 int complex_function(int x) {
     return _complex_function(x);
 }
+
+//在已存在的文件中新增带else条件编译的函数
+#ifdef ENABLE_ADVANCED_FEATURES
+void advanced_feature() {
+    printf("Advanced feature enabled!\n");
+}
+#else
+void advanced_feature() {
+    printf("Advanced feature disabled.\n");
+}
+#endif
