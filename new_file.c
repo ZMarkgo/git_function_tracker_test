@@ -23,3 +23,7 @@ int is_prime(int n) //test command
 { 
     return _is_prime(n);
 }
+
+int add(int x, int y) {
+    return x + y;
+}
