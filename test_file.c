@@ -22,7 +22,7 @@ int conditional_function(int x) {
 //构造一个带有if else条件编译的函数
 #ifdef MACRO_TEST
 int another_conditional_function(int x) {
-    return x * 2;
+    return x + 2;
 }
 #else
 int another_conditional_function(int x) {
