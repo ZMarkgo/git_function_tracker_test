@@ -24,6 +24,8 @@ int is_prime(int n) //test command
     return _is_prime(n);
 }
 
-int add(int x, int y) {
-    return x + y;
+int calculate(int x, int y) {
+    int sum = x + y;
+    int product = x * y;
+    return sum + product;
 }
