@@ -30,6 +30,3 @@ int another_conditional_function(int x) {
 }
 #endif
 
-int new_function2(int x, int y){
-    return x - y;
-}

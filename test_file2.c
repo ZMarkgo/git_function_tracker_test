@@ -49,3 +49,8 @@ int compute(int a, int b) {
     int result = 0;
     return result+a+b;
 }
+
+int new_function(int x, int y){
+    int res = x + y;
+    return res;
+}
