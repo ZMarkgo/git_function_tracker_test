@@ -40,3 +40,7 @@ int is_even(int number) {
 */
     return number % 2 == 0;
 }
+
+int calculate(int num) {
+    return num * num;
+}

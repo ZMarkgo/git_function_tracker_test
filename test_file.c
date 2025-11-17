@@ -30,6 +30,3 @@ int another_conditional_function(int x) {
 }
 #endif
 
-int calculate_square(int num) {
-    return num * num;
-}
