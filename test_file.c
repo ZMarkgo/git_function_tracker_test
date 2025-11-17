@@ -29,3 +29,7 @@ int another_conditional_function(int x) {
     return x / 2;
 }
 #endif
+
+int calculate_square(int num) {
+    return num * num;
+}
