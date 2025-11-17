@@ -31,3 +31,7 @@ int macro_function(int val) {
     return val + 100;
 }
 #endif
+
+int is_even(int number) {
+    return number % 2 == 0;
+}
