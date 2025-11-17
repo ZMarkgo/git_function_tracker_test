@@ -10,12 +10,14 @@ int cheng(int x, int y) {
 
 //新增函数
 int complex_operation(int a, int b) {
-    int sum = a + b;
-    int product = a * b;
+    
 
     if(a>0){
         b+=10;
     }
+
+    int sum = a + b;
+    int product = a * b;
 
     return sum + product + b;
 }
