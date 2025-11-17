@@ -6,3 +6,16 @@ int cheng(int x, int y) {
     return x * y;
 }
 #endif
+
+
+//新增函数
+int complex_operation(int a, int b) {
+    int sum = a + b;
+    int product = a * b;
+
+    if(a>0){
+        b+=10;
+    }
+
+    return sum + product + b;
+}
