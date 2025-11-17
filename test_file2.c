@@ -21,3 +21,13 @@ int complex_operation(int a, int b) {
 
     return sum + product + b;
 }
+
+#ifdef MACRO_TEST
+int macro_function(int val) {
+    return val + 100;
+}
+#else
+int macro_function(int val) {
+    return val - 100;
+}
+#endif
