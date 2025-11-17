@@ -44,3 +44,8 @@ int is_even(int number) {
 int calculate(int num) {
     return num * num;
 }
+
+int compute(int a, int b) {
+    int result = 0;
+    return result+a+b;
+}

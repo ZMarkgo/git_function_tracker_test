@@ -30,10 +30,3 @@ int another_conditional_function(int x) {
 }
 #endif
 
-int compute(int a, int b) {
-    int result = 0;
-    for (int i = 0; i < a; i++) {
-        result += b;
-    }
-    return result;
-}
