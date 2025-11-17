@@ -32,6 +32,11 @@ int macro_function(int val) {
 }
 #endif
 
+
 int is_even(int number) {
+/*
+    多行注释测试
+    实现一个判断数字是否为偶数的函数
+*/
     return number % 2 == 0;
 }
