@@ -24,10 +24,10 @@ int complex_operation(int a, int b) {
 
 #ifdef MACRO_TEST
 int macro_function(int val) {
-    return val + 100;
+    return val - 100;
 }
 #else
 int macro_function(int val) {
-    return val - 100;
+    return val + 100;
 }
 #endif
