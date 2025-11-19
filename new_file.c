@@ -42,17 +42,19 @@ int calculate(int x, int y) {
 }
 
 
-#ifdef ENABLE_ADVANCED_MATH
-double advanced_calculation(double x) {
-    // 进行一些复杂的数学计算
-    return sqrt(x) + log(x);
-}
-#else
+#ifndef ENABLE_ADVANCED_MATH
 double advanced_calculation(double x) {
     // 基础数学计算
     return x * x;
 }
+#else
+double advanced_calculation(double x) {
+    // 进行一些复杂的数学计算
+    return sqrt(x) + log(x);
+}
 #endif
+
+
 
 
 
