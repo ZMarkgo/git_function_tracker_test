@@ -2,16 +2,17 @@
 
 #ifdef NEW_TEST_FILE
 
-void test() {
-    int num=10;
-    printf("This is the original test function. Num is %d\n", num);
-}
-
-#else
-
 void test(){
     int num=20;
     printf("This is the modified test function after file move and code change. Num is %d\n", num);
 }
 
+#else
+
+void test() {
+    int num=10;
+    printf("This is the original test function. Num is %d\n", num);
+}
+
 #endif
+
