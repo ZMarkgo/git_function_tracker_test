@@ -30,3 +30,19 @@ int another_conditional_function(int x) {
 }
 #endif
 
+//新增一个多逻辑函数
+int complex_logic_function(int a, int b, int c) {
+    if (a > b) {
+        if (b > c) {
+            return a - c;
+        } else {
+            return a + b;
+        }
+    } else {
+        if (a == c) {
+            return b * 2;
+        } else {
+            return c - a;
+        }
+    }
+}
