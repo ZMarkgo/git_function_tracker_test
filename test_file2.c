@@ -54,3 +54,16 @@ int new_function(int x, int y){
     int res = x + y;
     return res;
 }
+
+// 原始函数
+void process_data(int x, int y) {
+    // 逻辑1：检查参数合法性
+    if (x < 0 || y < 0) {
+        printf("Invalid input!\n");
+        return;
+    }
+
+    // 逻辑2：执行计算
+    int result = x * x + y * y;
+    printf("Result = %d\n", result);
+}
