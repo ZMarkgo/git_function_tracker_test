@@ -55,15 +55,24 @@ int new_function(int x, int y){
     return res;
 }
 
-// 原始函数
+#ifdef M
+
+// 只保留逻辑1的版本
 void process_data(int x, int y) {
     // 逻辑1：检查参数合法性
     if (x < 0 || y < 0) {
         printf("Invalid input!\n");
         return;
     }
+}
 
+#else
+
+// 只保留逻辑2的版本
+void process_data(int x, int y) {
     // 逻辑2：执行计算
     int result = x * x + y * y;
     printf("Result = %d\n", result);
 }
+
+#endif
