@@ -47,23 +47,19 @@ int complex_logic_function(int a, int b, int c) {
     }
 }
 
-#ifdef M
-
-// 只保留逻辑1的版本
-void process_data(int x, int y) {
-    // 逻辑1：检查参数合法性
-    if (x < 0 || y < 0) {
-        printf("Invalid input!\n");
-        return;
+//新增一个多逻辑函数
+int complex_logic_function(int a, int b, int c) {
+    if (a > b) {
+        if (b > c) {
+            return a - c;
+        } else {
+            return a + b;
+        }
+    } else {
+        if (a == c) {
+            return b * 2;
+        } else {
+            return c - a;
+        }
     }
 }
-
-#else
-
-// 只保留逻辑2的版本
-void process_data(int x, int y) {
-    // 逻辑2：执行计算
-    int result = x * x + y * y;
-    printf("Result = %d\n", result);
-}
-#endif
