@@ -63,3 +63,10 @@ int complex_logic_function(int a, int b, int c) {
         }
     }
 }
+
+
+//新增一个无条件编译的结构体
+struct Point {
+    int x;
+    int y;
+};
