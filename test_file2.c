@@ -76,3 +76,13 @@ void process_data(int x, int y) {
 }
 
 #endif
+
+int new_clone_function(int x) {
+    int result = 0;
+    int i = 0;
+    while (i < x) {
+        result += i;
+        i++;
+    }
+    return result;
+}
