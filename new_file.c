@@ -64,9 +64,13 @@ struct MathResult {
 void function_A() {
     printf("Function A is enabled.\n");
 }
-#else
+#elif defined(MM)
 void function_A() {
     printf("Function B is enabled.\n");
+}
+#else
+void function_A() {
+    
 }
 #endif
 
