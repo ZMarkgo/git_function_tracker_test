@@ -20,3 +20,9 @@ void advanced_feature() {
     printf("Advanced feature enabled!\n");
 }
 #endif
+
+//构造一个结构体
+struct ComplexResult {
+    int value;
+    int status;
+};
