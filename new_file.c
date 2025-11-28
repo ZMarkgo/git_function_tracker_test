@@ -74,6 +74,13 @@ void function_A() {
 }
 #endif
 
+void funcA(){
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+    printf("Sum: %d\n", sum);
+}
+
 
 
 
