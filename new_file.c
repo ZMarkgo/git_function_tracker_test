@@ -60,6 +60,16 @@ struct MathResult {
     int is_prime;
 };
 
+#ifdef M
+void function_A() {
+    printf("Function A is enabled.\n");
+}
+#else
+void function_A() {
+    printf("Function B is enabled.\n");
+}
+#endif
+
 
 
 
