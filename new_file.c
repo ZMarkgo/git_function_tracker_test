@@ -60,8 +60,7 @@ struct MathResult {
     int is_prime;
 };
 
-//新增一个宏
-#define SQUARE(x) ((x) * (x))
+
 
 
 
