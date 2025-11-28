@@ -26,3 +26,5 @@ struct ComplexResult {
     int result;
     int status;
 };
+
+#define DEBUG 0
