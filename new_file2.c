@@ -23,6 +23,6 @@ void advanced_feature() {
 
 //构造一个结构体
 struct ComplexResult {
-    int value;
+    int result;
     int status;
 };
