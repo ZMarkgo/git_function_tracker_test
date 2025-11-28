@@ -60,11 +60,7 @@ struct MathResult {
     int is_prime;
 };
 
-//新增一个新结构体
-struct calResult {
-    int sum;
-    int product;
-};
+
 
 
 
