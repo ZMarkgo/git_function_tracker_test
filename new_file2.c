@@ -40,5 +40,4 @@ struct structA {
 struct structB {
     double x;
     double y;
-    double z;
 };
