@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int use_sum_logic = 1; // 1使用累加逻辑，0使用阶乘逻辑
+
 void process_data(int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
@@ -22,23 +24,21 @@ int new_function(int x){
     return x*x;
 }
 
-#ifdef M
 void funcA(){
-    int a = 5;
-    int sum = 0;
-    for(int i = 0; i < a; i++){
-        sum += i;
+    if (use_sum_logic) {
+        int a = 5;
+        int sum = 0;
+        for(int i = 0; i < a; i++){
+            sum += i;
+        }
+        printf("Using sum logic. Sum = %d\n", sum);
+    } else {
+        int b = 3;
+        int product = 1;
+        for(int i = 1; i <= b; i++){
+            product *= i;
+        }
+        printf("Using product logic. Product = %d\n", product);
     }
-    printf("Macro M is defined. Sum = %d\n", sum);
 }
-#else
-void funcA(){
-    int b = 3;
-    int product = 1;
-    for(int i = 1; i <= b; i++){
-        product *= i;
-    }
-    printf("Macro M is not defined. Product = %d\n", product);
-}
-#endif
 
