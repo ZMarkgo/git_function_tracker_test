@@ -49,4 +49,7 @@ struct MathResult1 {
     int is_prime;
 };
 
+//新增一个宏
+#define MAX_VALUE 100
+
 
