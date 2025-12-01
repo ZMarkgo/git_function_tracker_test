@@ -36,3 +36,9 @@ struct structA {
     double y;
     double z;
 };
+
+struct structB {
+    double x;
+    double y;
+    double z;
+};
