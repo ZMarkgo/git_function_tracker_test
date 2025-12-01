@@ -28,3 +28,10 @@ struct ComplexResult {
 };
 
 #define DEBUG 1
+
+//新增结构体A
+struct structA {
+    double x;
+    double y;
+    double z;
+};
