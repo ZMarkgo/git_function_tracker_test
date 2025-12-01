@@ -42,3 +42,11 @@ void funcA(){
     }
 }
 
+
+// 新增一个结构体(不要type定义)
+struct MathResult {
+    int result;
+    int is_prime;
+};
+
+
