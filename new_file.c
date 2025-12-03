@@ -89,6 +89,7 @@ void funcA(){
 
 
 struct MathResult2 {
+    //结果
     double result;
     int is_even;
 };
