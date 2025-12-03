@@ -41,3 +41,6 @@ struct structB {
     double x;
     double y;
 };
+
+//新增宏
+#define CHECK(x, y)
