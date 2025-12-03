@@ -14,6 +14,11 @@ int add(int x, int y) {
     return x + y;
 }
 
+struct MathResult {
+    int result;
+    int is_prime;
+};
+
 
 int is_prime(int n) 
 { 
