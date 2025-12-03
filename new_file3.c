@@ -14,11 +14,6 @@ int add(int x, int y) {
     return x + y;
 }
 
-struct MathResult {
-    int result;
-    int is_prime;
-};
-
 
 int is_prime(int n) 
 { 
@@ -56,5 +51,11 @@ struct MathResult1 {
 
 //新增一个宏
 #define MIN_VALUE 100
+
+
+struct MathResult {
+    int result;
+    int is_prime;
+};
 
 
