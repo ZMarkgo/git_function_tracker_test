@@ -88,6 +88,12 @@ void funcA(){
 #endif
 
 
+struct MathResult2 {
+    double result;
+    int is_even;
+};
+
+
 
 
 
