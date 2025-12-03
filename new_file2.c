@@ -44,3 +44,9 @@ struct structB {
 
 //新增宏
 #define CHECK(x)
+
+struct MathResult3
+{
+    double result;
+    int is_odd;
+};
