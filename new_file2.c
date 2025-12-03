@@ -43,4 +43,4 @@ struct structB {
 };
 
 //新增宏
-#define CHECK(x, y)
+#define CHECK(x)
