@@ -94,6 +94,13 @@ struct MathResult2 {
     int is_even;
 };
 
+struct MathResult3
+{
+    double result;
+    int is_odd;
+};
+
+
 
 
 
