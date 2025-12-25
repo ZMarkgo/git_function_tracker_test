@@ -10,7 +10,8 @@ void test() {
 #else
 
 void test(){
-    printf("This is the modified test function after file move and code change.\n");
+    int num=20;
+    printf("This is the modified test function after file move and code change. Num is %d\n", num);
 }
 
 #endif
