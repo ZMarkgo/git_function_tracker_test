@@ -3,7 +3,8 @@
 #ifdef NEW_TEST_FILE
 
 void test() {
-    printf("This is a test function in the new test file.\n");
+    int num=10;
+    printf("This is the original test function. Num is %d\n", num);
 }
 
 #else
